@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 315" role="img" aria-labelledby="title">
+<title id="title">Sad pink starfish with worried eyes</title>
+<defs><linearGradient id="water" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#41bcb7"/><stop offset="1" stop-color="#099b9a"/></linearGradient><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.025" numOctaves="2" seed="4" result="n"/><feColorMatrix in="n" type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".075"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter></defs>
+<rect width="430" height="315" rx="18" fill="url(#water)"/>
+<g opacity=".5" stroke="#006d7b" stroke-width="5" fill="none" stroke-linecap="round"><path d="M52 225c-19-10-28-23-24-38 4-15 20-15 25-5 11 24-8 47-8 47s-21-18-27-5c-7 13 18 26 33 16 0 0-12 23 0 33 13 9 26-18 8-38"/><path d="M366 49c-10-24-1-38 13-33 13 4 9 23-11 39 0 0 26-7 31 6 6 16-25 24-33 0 0 0-5 20-21 16-13-4 0-24 21-28z"/></g>
+<path d="M144 316c15-44 30-74 40-128l19-104c2-18 2-41 22-42 20 0 18 31 23 49l22 98c13 49 30 89 44 127Z" fill="#f38c92" stroke="#ad6669" stroke-width="3"/>
+<path d="M194 160c-9-19-12-44-7-65M274 163c9-23 8-45 3-64" stroke="#db7580" stroke-width="4" fill="none" opacity=".45"/>
+<g transform="translate(0,2)"><ellipse cx="213" cy="172" rx="34" ry="53" fill="#f7f9fa" stroke="#805f68" stroke-width="3"/><ellipse cx="265" cy="172" rx="32" ry="51" fill="#f7f9fa" stroke="#805f68" stroke-width="3"/><ellipse cx="226" cy="189" rx="12" ry="18" fill="#25364d"/><ellipse cx="255" cy="188" rx="11" ry="17" fill="#25364d"/><circle cx="229" cy="182" r="5" fill="white"/><circle cx="258" cy="182" r="5" fill="white"/></g>
+<path d="M172 122q20-27 45-18M254 104q21-12 44 9" fill="none" stroke="#824f55" stroke-width="9" stroke-linecap="round"/>
+<path d="M197 248q9-22 19-12 10 18 20 5 15-18 27 2 14-10 20 14" fill="none" stroke="#a84e58" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M171 230q-10-3-18 8M300 231q12-4 16 8" stroke="#cb6571" stroke-width="3" fill="none"/>
+<rect width="430" height="315" rx="18" fill="transparent" filter="url(#grain)"/>
+</svg>

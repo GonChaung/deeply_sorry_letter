@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffe5e9" />
+  <meta name="description" content="ကိုကိုက ငယ်ငယ့် ကို ပြောချင်တဲ့ တောင်းပန်စကားလေး 💗" />
+  <title>ငယ်ငယ့် အတွက် ကိုကို့ရဲ့ စကားလေး 💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <span class="sky-heart h1">♡</span><span class="sky-heart h2">♥</span><span class="sky-heart h3">♡</span><span class="sky-heart h4">✦</span><span class="sky-heart h5">♡</span><span class="sky-heart h6">♥</span>
+  </div>
+
+  <div class="site-wrap">
+    <div class="ribbon"><span class="mini-heart">♥</span> Made with love, for you <span class="mini-heart">♥</span></div>
+    <main class="book" id="book">
+      <div class="card-top">
+        <button class="icon-button back-button" id="backButton" aria-label="အရင်စာမျက်နှာ" title="နောက်ပြန်သွားရန်" disabled>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <span class="top-title" id="topTitle">ကိုကို ပြောချင်တာလေး 💌</span>
+        <button class="icon-button sound-button" id="soundButton" aria-label="အသံဖွင့်ရန်" aria-pressed="false" title="အသံဖွင့်/ပိတ်">
+          <svg class="sound-on-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          <svg class="sound-off-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/><path d="M3 3l18 18"/></svg>
+        </button>
+      </div>
+      <div class="progress-track" aria-label="တိုးတက်မှု"><div id="progressFill" class="progress-fill"></div></div>
+
+      <section class="scene active" data-scene="0" aria-label="အစစာမျက်နှာ">
+        <span class="eyebrow">ငယ်ငယ် ရေ... ကိုကို့ကို</span>
+        <h1>စိတ်ဆိုးနေသေးလားဟင် <span class="title-emoji">🥺</span></h1>
+        <figure class="meme-figure starfish-figure"><img src="assets/sad-starfish.svg" alt="ဝမ်းနည်းနေတဲ့ ပန်းရောင် ကြယ်ငါးလေး" /></figure>
+        <p class="scene-message">ကိုကို့ကြောင့် ငယ်ငယ် စိတ်မကောင်းဖြစ်သွားရတာကို တကယ်တောင်းပန်ပါတယ်။ ကိုကိုပြောချင်တာလေး နားထောင်ပေးပါနော်။</p>
+        <button class="pill-button primary" data-next>အင်း... နားထောင်ပေးမယ် <span>♡</span></button>
+      </section>
+
+      <section class="scene" data-scene="1" aria-label="ဝန်ခံခြင်း" hidden>
+        <span class="eyebrow">အမှန်တိုင်း ပြောရရင်...</span>
+        <h1>ကိုကို မှားသွားပါတယ် <span class="title-emoji">🥹</span></h1>
+        <figure class="meme-figure cat-figure"><img src="assets/cat-phone.svg" alt="ဖုန်းကို ကိုင်ထားတဲ့ ကြောင်ပေါက်လေး" /></figure>
+        <p class="scene-message">ဆင်ခြေတွေပေးမနေတော့ဘူး။ ကိုကို့အမှားကြောင့် ငယ်ငယ် နာကျင်ခဲ့ရတာကို ကိုကို နားလည်ပါတယ်။</p>
+        <button class="pill-button primary" data-next>ဆက်ပြောလေ... 💗</button>
+      </section>
+
+      <section class="scene" data-scene="2" aria-label="စိတ်ဆိုးလို့ရတဲ့ စာမျက်နှာ" hidden>
+        <span class="eyebrow">စိတ်တွေ နာကျင်နေသေးရင်...</span>
+        <h1>ဒီမှာ ငယ်ငယ် စိတ်ကြိုက်<br />ကိုကို့ကို ဆူလို့ရတယ်နော်</h1>
+        <p class="scene-hint">စိတ်ထဲရှိတာတွေ ဖွင့်ထုတ်လိုက်ပါ 😾</p>
+        <div class="anger-arena" id="angerArena">
+          <button class="anger-tap" id="angerTap" aria-label="ကိုကို့ကို ဆူမယ်" title="နှိပ်ပါ / ဖိထားပါ">
+            <img src="assets/angry-heart.svg" alt="စိတ်ဆိုးနေတဲ့ ကာတွန်းလေး" />
+            <span class="tap-spark spark-a">✦</span><span class="tap-spark spark-b">♥</span>
+          </button>
+          <div id="popLayer" class="pop-layer" aria-hidden="true"></div>
+        </div>
+        <div class="tap-count">× <span id="tapCount">0</span></div>
+        <p class="muted-instruction" id="tapHint">ပုံလေးကို နှိပ်ပါ၊ ဒါမှမဟုတ် ဖိထားပါ ✨</p>
+        <button class="pill-button primary" data-next>ဆက်သွားကြမယ် 💕</button>
+      </section>
+
+      <section class="scene" data-scene="3" aria-label="ကိုကို့ရဲ့ကတိ" hidden>
+        <span class="eyebrow">ကတိစကား သေသေချာချာ...</span>
+        <h1>ကိုကို နောက်တစ်ခါ<br />ဒီလိုအမှားမျိုး ထပ်မလုပ်တော့ပါဘူး</h1>
+        <p class="scene-hint">စကားနဲ့မဟုတ်ဘဲ လုပ်ရပ်နဲ့ သက်သေပြမယ်။</p>
+        <div class="pinky-wrap" aria-label="နှစ်ယောက် လက်ချင်းချိတ်တဲ့ ပုံလေး"><span class="pinky left">🤙🏻</span><span class="pinky-heart">♥</span><span class="pinky right">🤙🏻</span></div>
+        <p class="scene-message short">ငယ်ငယ့် ကို နားလည်ပေးဖို့၊ စိတ်ချမ်းသာစေဖို့ ကိုကို ပိုကြိုးစားမယ်နော်။</p>
+        <button class="pill-button primary" data-next>ဆက်နားထောင်မယ် ♡</button>
+      </section>
+
+      <section class="scene" data-scene="4" aria-label="Baby ရွေးချယ်နိုင်တဲ့စာမျက်နှာ" hidden>
+        <span class="eyebrow">ကတိအားလုံးထဲက အရေးကြီးဆုံး...</span>
+        <h1>ကိုကို ကတိတွေအားလုံး<br />တည်ပေးမယ်နော်</h1>
+        <div class="quote-box">Baby စိတ်ချမ်းသာဖို့နဲ့ ယုံကြည်မှု ပြန်ရဖို့ အချိန်ယူပြီး ကိုကို ကြိုးစားပါ့မယ်။</div>
+        <p class="choice-prompt">ကိုကို ရေးထားတဲ့ စာလေးကို ဖတ်ပေးမလားဟင်?</p>
+        <div class="choice-buttons">
+          <button class="pill-button secondary" id="notYetButton">စိတ်ဆိုးနေသေးတယ် 😣</button>
+          <button class="pill-button primary" id="readLetterButton">စာလေး ဖတ်မယ် 💌</button>
+        </div>
+        <p id="notYetResponse" class="gentle-response" aria-live="polite" hidden>ရပါတယ် ငယ်ငယ် အခု ခွင့်မလွှတ်နိုင်သေးလည်း ကိုကို နားလည်ပါတယ်။ ငယ်ငယ် အဆင်ပြေတဲ့အချိန်မှ စာလေးဖတ်ပေးနော်။ 🌷</p>
+      </section>
+
+      <section class="scene letter-scene" data-scene="5" aria-label="ကိုကို့ရဲ့ တောင်းပန်စာ" hidden>
+        <span class="eyebrow">စာလွှာလေးတစ်စောင်...</span>
+        <h1>တောင်းပန်လွှာ 💌</h1>
+        <article class="letter-paper" aria-label="တောင်းပန်စာ">
+          <p class="letter-hi">ချစ်ရပါသော ကိုကို့ရဲ့ ငယ်ငယ် လေးဆီသို့...</p>
+          <p>ကိုကို့ကြောင့် ငယ်ငယ် စိတ်မကောင်းဖြစ်သွားရတာကို တကယ် ဝမ်းနည်းပြီး တောင်းပန်ပါတယ်။ ကိုကိုလုပ်ခဲ့တဲ့ အမှားကို ဆင်ခြေတွေ ပေးပြီး ဖုံးကွယ်မနေချင်ပါဘူး။</p>
+          <p>ငယ်ငယ် ခံစားခဲ့ရတာတွေကို ကိုကို အလေးထားပါတယ်။ စိတ်ဆိုးလို့လည်း ရတယ်၊ ဝမ်းနည်းလို့လည်း ရတယ်။ ခွင့်လွှတ်ဖို့ အလျင်စလို မဆုံးဖြတ်လည်း ရပါတယ်နော်။</p>
+          <p>ကိုကို့အမှားတွေကနေ သင်ယူပြီး နောက်တစ်ခါ ထပ်မဖြစ်အောင် ပြောင်းလဲဖို့ ကြိုးစားပါ့မယ်။ ပြောတဲ့စကားတစ်ခွန်းထက် လုပ်ရပ်တွေက ပိုအရေးကြီးတယ်ဆိုတာ ကိုကို သိပါတယ်။</p>
+          <p>ငယ်ငယ့် ရဲ့ အပြုံးလေးကို မြင်ရတဲ့နေ့တွေကို ကိုကို အရမ်းတန်ဖိုးထားပါတယ်။ ကိုကိုတို့အတူတူ ပျော်ရွှင်ခဲ့တဲ့ အချိန်လေးတွေကိုလည်း မမေ့ပါဘူး။</p>
+          <p>အရာအားလုံးအတွက် တောင်းပန်ပါတယ်။ ငယ်ငယ် အဆင်ပြေတဲ့အချိန်မှာ ကိုကိုတို့ စကားအေးအေးဆေးဆေး ပြန်ပြောကြမယ်နော်။ ကိုကို နားထောင်ပေးဖို့ အသင့်ရှိနေပါတယ်။</p>
+          <p class="letter-sign">အမြဲတမ်း အနတ္တ ချစ်နေတဲ့<br /><strong>— ကိုကို 💗</strong></p>
+        </article>
+        <button class="pill-button primary letter-action" data-next>နောက်ဆုံး စကားလေး တစ်ခွန်း 💗</button>
+      </section>
+
+      <section class="scene final-scene" data-scene="6" aria-label="နောက်ဆုံးစာမျက်နှာ" hidden>
+        <span class="eyebrow">ရင်ထဲကနေ ပြောချင်တာ...</span>
+        <h1>ကိုကို ငယ်ငယ့် ကို<br />အရမ်းချစ်တယ် ❤️</h1>
+        <div class="big-heart-wrap" aria-hidden="true"><span class="heart-glow"></span><span class="big-heart">♥</span><span class="heart-shine shine-one">✧</span><span class="heart-shine shine-two">✦</span></div>
+        <p class="scene-message">ငယ်ငယ် စိတ်ချမ်းသာဖို့အတွက် ကိုကို ပိုကောင်းတဲ့လူတစ်ယောက်ဖြစ်အောင် ကြိုးစားသွားမယ်နော်။ အမြဲ တန်ဖိုးထားပါတယ်။</p>
+        <div class="final-signoff">from your ကိုကို, with all my love ♡</div>
+        <button class="pill-button secondary start-over" id="startOverButton">အစကနေ ပြန်ကြည့်မယ် ↺</button>
+      </section>
+      <div class="card-footer"><div class="dots" id="dots" aria-label="စာမျက်နှာအမှတ်အသား"></div><span class="footer-note">just a little love letter ♡</span></div>
+    </main>
+    <p class="outside-note">အချစ်နဲ့ ဖန်တီးထားတဲ့ စာမျက်နှာလေး 🌷</p>
+  </div>
+  <div id="confetti" class="confetti-area" aria-hidden="true"></div>
+</body>
+</html>
