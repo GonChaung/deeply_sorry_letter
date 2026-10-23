@@ -71,9 +71,9 @@
   function tapAngry() {
     taps++;
     tapCountEl.textContent = taps.toLocaleString('en-US');
-    if (taps === 10) tapHint.textContent = 'ဟုတ်ကဲ့ Baby... ကိုကို နားထောင်နေပါတယ် 🥺';
+    if (taps === 10) tapHint.textContent = 'ဟုတ်ကဲ့ ငယ်ငယ်... ကိုကို နားထောင်နေပါတယ် 🥺';
     if (taps === 40) tapHint.textContent = 'နောက်တစ်ခါ မဖြစ်စေရပါဘူးနော် 💗';
-    if (taps === 100) tapHint.textContent = '၁၀၀ ကြိမ် တောင်းပန်ပါတယ် Baby!';
+    if (taps === 100) tapHint.textContent = '၁၀၀ ကြိမ် တောင်းပန်ပါတယ် ငယ်ငယ်!';
     // Keep very brief floating speech bubbles readable rather than filling the screen.
     if (taps % 2 === 1) {
       const bubble = document.createElement('span');
